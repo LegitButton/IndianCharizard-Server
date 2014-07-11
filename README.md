@@ -31,7 +31,7 @@ Features
 
 Getting Started
 ------------------------------------------------------------------------
-To get started with this boilerplate, just download this as a zip or clone it and install a [Pokemon Showdown server][1] as you usually do.
+To get started with this repository, just download this as a zip or clone it and install a [Pokemon Showdown server][1] as you usually do.
 If you forgot how to do this, here is a quick reference:
 
 	git clone https://github.com/CreaturePhil/Showdown-Boilerplate.git showdown-boilerplate
