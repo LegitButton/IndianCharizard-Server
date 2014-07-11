@@ -201,36 +201,10 @@ var components = exports.components = {
 
     },
 
-    shop: function (target, room, user) {
-        if (!this.canBroadcast()) return;
-        return this.sendReply('|raw|' + Core.shop(true));
+    
     },
 
-    buy: function (target, room, user) {
-        if (!target) this.parse('/help buy');
-        var userMoney = Number(Core.stdin('money', user.userid));
-        var shop = Core.shop(false);
-        var len = shop.length;
-        while (len--) {
-            if (target.toLowerCase() === shop[len][0].toLowerCase()) {
-                var price = shop[len][2];
-                if (price > userMoney) return this.sendReply('You don\'t have enough money for this. You need ' + (price - userMoney) + ' more bucks to buy ' + target + '.');
-                Core.stdout('money', user.userid, (userMoney - price));
-                if (target.toLowerCase() === 'symbol') {
-                    user.canCustomSymbol = true;
-                    this.sendReply('You have purchased a custom symbol. You will have this until you log off for more than an hour. You may now use /customsymbol now.');
-                    this.parse('/help customsymbol');
-                    this.sendReply('If you do not want your custom symbol anymore, you may use /resetsymbol to go back to your old symbol.');
-                } else {
-                    this.sendReply('You have purchased ' + target + '. Please contact an admin to get ' + target + '.');
-                    for (var u in Users.users) {
-                        if (Users.get(u).group === '~') Users.get(u).send('|pm|' + user.group + user.name + '|' + Users.get(u).group + Users.get(u).name + '|' + 'I have bought ' + target + ' from the shop.');
-                    }
-                }
-                room.add(user.name + ' has bought ' + target + ' from the shop.');
-            }
-        }
-    },
+    
 
     transferbuck: 'transfermoney',
     transferbucks: 'transfermoney',
