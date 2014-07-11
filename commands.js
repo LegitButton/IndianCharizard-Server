@@ -1243,7 +1243,7 @@ var commands = exports.commands = {
 		if (!this.can('lockdown')) return false;
 
 		if (!Rooms.global.lockdown) {
-			return this.sendReply("For safety reasons, /kill can only be used during lockdown.");
+			return this.sendReply("For safety reasons, /killl can only be used during lockdown.");
 		}
 
 		if (CommandParser.updateServerLock) {
