@@ -46,7 +46,7 @@ Now, to start Pokémon Showdown, run the command:
 
     node app.js
 
-You can also specify a port:
+You can also specify a port:           
 
     node app.js 8000
 
@@ -88,12 +88,12 @@ Browser support
 Pokémon Showdown currently supports, in order of preference:
 
  - Chrome
- - Firefox
+ - Firefox 
  - Safari
  - Chrome/Firefox/Safari for various mobile devices
  - Opera
  - Firefox for Android
- - IE9+
+ - Internet Explorer
 
 IE8 support can technically be added without too much difficulty, but it doesn't run PS fast enough to be usable.
 
