@@ -1,0 +1,19 @@
+#header{background:url("http://pythoughts.com/wp-content/uploads/2011/01/mysteriousblue-300x115.jpg")}
+
+body{background-image:url("http://i.imgur.com/8aqiwNS.jpg");background-repeat:no-repeat;background-position:center}
+
+.chat-log{font-size:10pt;background: url("http://i.imgur.com/MeALmsC.png") no-repeat scroll right bottom;background:#a5ffa5;color:#000;overflow:auto;}
+
+.menugroup .button{background:#00C5CD}.menugroup
+
+.menugroup {
+background:#00C5CD);
+text-align: center;
+}
+
+.button:hover{background:#00C5CD}
+
+.userlist {
+border-left: 1px solid #D5DDE4;
+background: #38B0DE;
+}
